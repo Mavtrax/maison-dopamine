@@ -1,0 +1,47 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Palette luxe clair : papier ivoire, encre, or */
+  --color-fond: #f7f2e9;
+  --color-fond-2: #efe7d7;
+  --color-surface: #fffdf8;
+  --color-ligne: #ddd0b8;
+  --color-encre: #221b12;
+  --color-taupe: #6f6350;
+  --color-or: #9c7a33;
+  --color-or-vif: #c9a961;
+  --color-ivoire: #f4efe6;
+
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Jost', system-ui, sans-serif;
+
+  --ease-luxe: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-fond text-encre font-sans antialiased;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+}
+
+::selection {
+  background: var(--color-or);
+  color: var(--color-ivoire);
+}
+
+/* Filet doré décoratif */
+.filet {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--color-or) 20%,
+    var(--color-or) 80%,
+    transparent
+  );
+  height: 1px;
+  opacity: 0.45;
+}
