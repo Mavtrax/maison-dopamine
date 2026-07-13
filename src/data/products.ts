@@ -184,7 +184,13 @@ const CURATED_PRODUCTS: Product[] = [
   },
 ]
 
-export const PRODUCTS: Product[] = [...CURATED_PRODUCTS, ...generateProducts()]
+// Les 15 produits phares ont une photo libre de droits dans public/images/<id>.webp
+const curatedWithImages: Product[] = CURATED_PRODUCTS.map((product) => ({
+  ...product,
+  image: `/images/${product.id}.webp`,
+}))
+
+export const PRODUCTS: Product[] = [...curatedWithImages, ...generateProducts()]
 
 export function getProduct(id: string): Product | undefined {
   return PRODUCTS.find((product) => product.id === id)

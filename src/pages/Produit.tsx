@@ -54,7 +54,7 @@ export function Produit() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
         >
-          <ProductVisual product={product} className="aspect-[4/5] w-full" />
+          <ProductVisual product={product} className="aspect-[4/5] w-full" eager />
         </motion.div>
 
         <motion.div

@@ -18,6 +18,8 @@ export interface Product {
   detail: string
   monogram: string
   gradient: [string, string]
+  /** Photo libre de droits (Unsplash), servie depuis /images. Absente = visuel monogramme. */
+  image?: string
 }
 
 export const CATEGORY_LABELS: Record<Category, string> = {

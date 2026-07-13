@@ -3,13 +3,41 @@ import type { Product } from '../types'
 interface ProductVisualProps {
   product: Product
   className?: string
+  /** Charger l'image immédiatement (fiche produit au-dessus de la ligne de flottaison). */
+  eager?: boolean
 }
 
 /**
- * Visuel de produit sans photo : composition gradient + monogramme serif.
- * Évite tout souci de droits d'image tout en gardant une DA luxe cohérente.
+ * Visuel de produit : photo libre de droits quand elle existe,
+ * sinon composition gradient + monogramme serif (zéro souci de droits d'image).
  */
-export function ProductVisual({ product, className = '' }: ProductVisualProps) {
+export function ProductVisual({ product, className = '', eager = false }: ProductVisualProps) {
+  if (product.image) {
+    return (
+      <div className={`relative overflow-hidden ${className}`}>
+        <img
+          src={product.image}
+          alt={`${product.name} — ${product.house}`}
+          loading={eager ? 'eager' : 'lazy'}
+          className="absolute inset-0 h-full w-full object-cover"
+        />
+        <div
+          aria-hidden
+          className="absolute inset-x-0 bottom-0 h-16"
+          style={{
+            background: 'linear-gradient(to top, rgba(13,11,9,0.55) 0%, transparent 100%)',
+          }}
+        />
+        <span
+          aria-hidden
+          className="absolute bottom-3 left-0 right-0 text-center text-[10px] tracking-[0.3em] uppercase text-ivoire/80"
+        >
+          {product.house}
+        </span>
+      </div>
+    )
+  }
+
   const [from, to] = product.gradient
 
   return (
