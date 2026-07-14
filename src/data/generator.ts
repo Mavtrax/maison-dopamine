@@ -440,6 +440,8 @@ export function generateProducts(): Product[] {
         detail: `${pick(DETAILS[category], rand)} ${pick(EDITIONS, rand)}`,
         monogram: house.monogram,
         gradient: pick(GRADIENTS, rand),
+        // Pool de photos libres : une image par produit, index aligné sur COUNTS
+        image: `/images/${category}-${String(index).padStart(2, '0')}.webp`,
       })
     })
   }
