@@ -1,5 +1,6 @@
 import type { Product } from '../types'
 import { generateProducts } from './generator'
+import { ABSURD_PRODUCTS } from './absurdes'
 
 const CURATED_PRODUCTS: Product[] = [
   {
@@ -190,7 +191,11 @@ const curatedWithImages: Product[] = CURATED_PRODUCTS.map((product) => ({
   image: `/images/${product.id}.webp`,
 }))
 
-export const PRODUCTS: Product[] = [...curatedWithImages, ...generateProducts()]
+export const PRODUCTS: Product[] = [
+  ...curatedWithImages,
+  ...ABSURD_PRODUCTS,
+  ...generateProducts(),
+]
 
 export function getProduct(id: string): Product | undefined {
   return PRODUCTS.find((product) => product.id === id)
