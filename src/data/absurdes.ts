@@ -2,7 +2,7 @@ import type { Product } from '../types'
 
 /**
  * La ligne « Atelier Saugrenu » : matières impossibles, sérieux impeccable.
- * Pas de photos (et pour cause) : visuel monogramme doré.
+ * Photos générées par IA (Pollinations/Flux) dans public/images/saugrenu/<id>.jpg.
  */
 
 const HOUSE = 'Atelier Saugrenu'
@@ -766,4 +766,5 @@ export const ABSURD_PRODUCTS: Product[] = SEEDS.map((seed, index) => ({
   house: HOUSE,
   monogram: MONOGRAM,
   gradient: seed.gradient ?? GRADIENTS[index % GRADIENTS.length],
+  image: `/images/saugrenu/${seed.id}.jpg`,
 }))
