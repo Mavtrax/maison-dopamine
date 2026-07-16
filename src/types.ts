@@ -4,6 +4,8 @@ export type Category =
   | 'joaillerie'
   | 'sneakers'
   | 'parfums'
+  | 'voitures'
+  | 'bateaux'
   | 'lunettes'
   | 'accessoires'
   | 'maison'
@@ -28,6 +30,8 @@ export const CATEGORY_LABELS: Record<Category, string> = {
   joaillerie: 'Joaillerie',
   sneakers: 'Sneakers',
   parfums: 'Parfums',
+  voitures: 'Automobiles',
+  bateaux: 'Bateaux',
   lunettes: 'Lunettes',
   accessoires: 'Accessoires',
   maison: 'Art de vivre',

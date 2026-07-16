@@ -759,6 +759,190 @@ const SEEDS: AbsurdSeed[] = [
       "Chaque longueur crépite délicieusement. Plonger avec délicatesse, nager avec philosophie, sortir avant la dernière bulle.",
     detail: 'Triple épaisseur · margelle mousse · bande-son : incluse',
   },
+
+  // ——— Automobiles ———
+  {
+    id: 'a-berline-carton',
+    name: 'Berline en carton ondulé « La Pluviophobe »',
+    category: 'voitures',
+    price: 195000,
+    description:
+      "Triple cannelure, pliage main, scotch de sellier. Des performances remarquables par grand beau temps, une dissolution élégante sous l'averse.",
+    detail: 'Carton triple cannelure · 0 ch mais 0 kg · garage sec exigé',
+  },
+  {
+    id: 'a-cabriolet-osier',
+    name: 'Cabriolet en osier tressé « Le Déjeuner sur l\'Herbe »',
+    category: 'voitures',
+    price: 340000,
+    description:
+      "Tressé par nos vanniers pilotes, il sent la campagne et le beurre frais. Le coffre est littéralement un panier de pique-nique.",
+    detail: 'Osier de Dordogne · sièges torchon vichy · nappe de série',
+  },
+  {
+    id: 'a-supercar-chocolat',
+    name: 'Supercar en chocolat noir « La Fondante »',
+    category: 'voitures',
+    price: 1850000,
+    description:
+      "Aérodynamique dessinée au couteau à ganache, 70 % de cacao grand cru. Interdite de stationnement en plein soleil, et c'est très bien ainsi.",
+    detail: 'Grand cru 70 % · jantes pralinées · garage réfrigéré obligatoire',
+  },
+  {
+    id: 'a-citadine-tricot',
+    name: 'Citadine en grosse laine « La Douillette »',
+    category: 'voitures',
+    price: 88000,
+    description:
+      "Tricotée main au point mousse par nos grand-mères pilotes d'essai. Les chocs sont absorbés, les câlins aussi. Lavage à 30° maximum.",
+    detail: 'Laine mérinos · pare-chocs pompon · rétrécit au lavage',
+  },
+  {
+    id: 'a-berline-marbre',
+    name: 'Berline en marbre de Carrare « L\'Immobile »',
+    category: 'voitures',
+    price: 2900000,
+    description:
+      "Quatorze tonnes de prestance sculptée d'un seul bloc. Elle ne démarre pas, ne roule pas, ne cède rien : la présence à l'état pur.",
+    detail: 'Marbre statuaire · veines certifiées · livrée par grue',
+  },
+  {
+    id: 'a-coupe-gonflable',
+    name: 'Coupé gonflable « Le Rebond »',
+    category: 'voitures',
+    price: 125000,
+    description:
+      "Pare-chocs intégral sur toute la carrosserie : les accrochages deviennent des retrouvailles. Se range dégonflé dans un sac de sport.",
+    detail: 'PVC nacré · gonflage 8 min · rustines en cuir fournies',
+  },
+  {
+    id: 'a-roadster-savon',
+    name: 'Roadster en savon de Marseille « La Glissante »',
+    category: 'voitures',
+    price: 240000,
+    description:
+      "Taillé dans un pain de 900 kilos, cube d'origine certifié. L'aérodynamique s'améliore sous la pluie, la tenue de route beaucoup moins.",
+    detail: '72 % d\'huile d\'olive · mousse au freinage · parfum lavande',
+  },
+  {
+    id: 'a-citadine-noix',
+    name: 'Micro-citadine en coquille de noix « La Cerneau »',
+    category: 'voitures',
+    price: 65000,
+    description:
+      "La seule voiture qui se gare dans une poche de manteau. Habitacle une place, à condition d'être une noisette.",
+    detail: 'Noix du Périgord · charnière d\'origine · casse-noisette antivol',
+  },
+  {
+    id: 'a-gt-glace',
+    name: 'GT en glace « L\'Hivernale »',
+    category: 'voitures',
+    price: 780000,
+    description:
+      "Sculptée à la tronçonneuse dans un glacier consentant. Performances décroissantes mais silhouette de plus en plus fuselée : elle fond vers la perfection.",
+    detail: 'Glace de glacier · phares givrés · vendue avec semi-remorque frigorifique',
+  },
+  {
+    id: 'a-limousine-bambou',
+    name: 'Limousine en bambou « La Zen »',
+    category: 'voitures',
+    price: 420000,
+    description:
+      "Assemblée sans un seul clou, selon un art ancestral que nos artisans ont appris le mois dernier. Elle pousse encore de trois centimètres par an.",
+    detail: 'Bambou massif · ligatures rotin · s\'arrose une fois par semaine',
+  },
+
+  // ——— Bateaux ———
+  {
+    id: 'a-yacht-origami',
+    name: 'Yacht en papier plié « Le Pliage »',
+    category: 'bateaux',
+    price: 1200000,
+    description:
+      "Vingt-quatre mètres pliés d'une seule feuille, sans colle, par un maître origamiste au sommet de son art. Craint l'écume, la bruine et les émotions fortes.",
+    detail: 'Papier 300 g marine · pliage certifié · navigation par temps parfaitement sec',
+  },
+  {
+    id: 'a-voilier-sucre',
+    name: 'Voilier en sucre glace « Le Soluble »',
+    category: 'bateaux',
+    price: 860000,
+    description:
+      "Gréement caramélisé, coque poudrée main. La navigation en eau salée est déconseillée, en eau douce aussi, à vrai dire.",
+    detail: 'Sucre de canne pressé · voiles en papier azyme · durée de vie : une régate',
+  },
+  {
+    id: 'a-pedalo-marbre',
+    name: 'Pédalo en marbre de Carrare « Le Stoïque »',
+    category: 'bateaux',
+    price: 450000,
+    description:
+      "Six tonnes de sérénité sculptée. Il coule immédiatement, mais avec une dignité que peu d'embarcations peuvent revendiquer.",
+    detail: 'Marbre statuaire · pédalier bronze · vendu avec grue et philosophie',
+  },
+  {
+    id: 'a-barque-biscotte',
+    name: 'Barque en biscotte « La Trempée »',
+    category: 'bateaux',
+    price: 74000,
+    description:
+      "Croustillante au départ du quai, mélancolique à mi-traversée. Les rames en gressin se dégustent en cas d'avarie.",
+    detail: 'Biscotte double cuisson · bancs beurrés · autonomie : un café',
+  },
+  {
+    id: 'a-canot-eponge',
+    name: "Canot en éponge naturelle « L'Absorbant »",
+    category: 'bateaux',
+    price: 132000,
+    description:
+      "Le seul bateau qui vide la mer à mesure qu'il s'y enfonce. Nos ingénieurs assurent que c'est un mode de navigation comme un autre.",
+    detail: 'Éponge de Méditerranée · essorage conseillé après chaque sortie',
+  },
+  {
+    id: 'a-gondole-reglisse',
+    name: 'Gondole en réglisse « La Vénitienne »',
+    category: 'bateaux',
+    price: 390000,
+    description:
+      "Torsadée dans la plus pure tradition, rame anisée comprise. Se déguste en cas de naufrage, ce qui arrive dès la mise à l'eau.",
+    detail: 'Réglisse premium torsadée · ferro en bonbon · gondolier non comestible',
+  },
+  {
+    id: 'a-sousmarin-passoire',
+    name: 'Sous-marin en passoire « Le Courageux »',
+    category: 'bateaux',
+    price: 2400000,
+    description:
+      "Immersion instantanée, remontée théorique. L'inox perforé offre une vue à 360° sur tout ce qui entre, c'est-à-dire la mer.",
+    detail: 'Inox perforé 3 mm · hublots naturels x847 · périscope décoratif',
+  },
+  {
+    id: 'a-catamaran-glacons',
+    name: "Catamaran en glaçons « L'Estival »",
+    category: 'bateaux',
+    price: 980000,
+    description:
+      "Deux coques de glace pure taillées au pic. Une course contre la montre, le soleil et le bon sens : nos clients adorent.",
+    detail: 'Glace de source · trampoline givré · saison : février, le matin',
+  },
+  {
+    id: 'a-paquebot-liege',
+    name: 'Transatlantique en bouchons de champagne « Le Millésimé »',
+    category: 'bateaux',
+    price: 3500000,
+    description:
+      "Quatre cent mille bouchons de grandes maisons, liés à la ficelle de muselet. Rigoureusement insubmersible et vaguement pétillant.",
+    detail: 'Liège millésimé · coque à bulles · fuite d\'ambiance festive',
+  },
+  {
+    id: 'a-paddle-beurre',
+    name: 'Paddle en beurre demi-sel « Le Breton »',
+    category: 'bateaux',
+    price: 46000,
+    description:
+      "La glisse la plus parfaite du marché, l'équilibre le plus discutable. Par forte chaleur, devient une expérience culinaire.",
+    detail: 'Beurre AOP baratté · pagaie en crêpe rigide · cristaux de sel antidérapants',
+  },
 ]
 
 export const ABSURD_PRODUCTS: Product[] = SEEDS.map((seed, index) => ({
